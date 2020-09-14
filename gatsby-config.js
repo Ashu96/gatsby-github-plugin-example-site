@@ -6,5 +6,12 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      resolve: require.resolve(`../source-plugin`),
+      options: {
+        repo: "webiny/webiny-js",
+      },
+    },
+  ],
 }
